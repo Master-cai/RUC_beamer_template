@@ -1,0 +1,134 @@
+% this template mostly comes from Trinkle23897
+% his github repo is https://github.com/Trinkle23897/THU-Beamer-Theme
+% thanks a lot Trinkle!
+% two color theme fdu_red and fdu_blue, choose your preference main document and switch in the menu
+% github repo https://github.com/milanmarks/FDU-Beamer-Theme
+\documentclass[aspectratio=169]{beamer}
+\usepackage{ctex, hyperref}
+\usefonttheme{serif}
+\usepackage[T1]{fontenc}
+\setmainfont{Times New Roman}
+% other packages
+\usepackage{latexsym,amsmath,xcolor,multicol,booktabs,calligra}
+\usepackage{graphicx,pstricks,listings,stackengine}
+\usepackage{ragged2e}% 两端对齐
+% 两端对齐命令为：$\justifying$ 加在相应段落前
+\usepackage{mathrsfs}% 花体字母
+% 花体字母命令为：$\mathcal{G}$
+
+
+\author{name}
+\title{title}
+\subtitle{subtitle}
+\institute{University\quad Lab}
+\date{\today}
+\usepackage{RenminUniv}
+
+
+% defs
+\def\cmd#1{\texttt{\color{red}\footnotesize $\backslash$#1}}
+\def\env#1{\texttt{\color{blue}\footnotesize #1}}
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{deepred}{rgb}{0.6,0,0}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+\definecolor{halfgray}{gray}{0.55}
+
+\lstset{
+    basicstyle=\ttfamily\small,
+    keywordstyle=\bfseries\color{deepblue},
+    emphstyle=\ttfamily\color{deepred},    % Custom highlighting style
+    stringstyle=\color{deepgreen},
+    numbers=left,
+    numberstyle=\small\color{halfgray},
+    rulesepcolor=\color{red!20!green!20!blue!20},
+    frame=shadowbox,
+}
+%\logo{\vspace*{5cm}\pgfuseimage{mylogo}\hspace{11cm}}
+
+\pgfdeclareimage[width=1.15cm]{Infologo}{asset/Info_Logo.jpg}
+\pgfdeclareimage[width=1.1cm]{RUClogo}{asset/RUC_Logo.png}
+\pgfdeclareimage[height=1.1cm]{Inlablogo}{asset/Inlab_logo.png}
+\pgfdeclareimage[width=2cm]{background_white}{asset/background_white.png}
+\pgfdeclareimage[width=0.9\paperwidth, height=1.15\paperheight]{mybg}{asset/background.pdf}
+
+%remove bullets in headline
+%\removeBullets
+
+\begin{document}
+
+\kaishu
+%\rmfamily
+\begin{frame}
+	\begin{picture}(0, 40)(0, 0)
+%		\put(width, height)
+% subtitle 为单行时logo高度
+%		\put(350, 10){\pgfuseimage{RUClogo}}
+%		\put(387, 9){\pgfuseimage{Infologo}}
+%		\put(-25, 10){\pgfuseimage{Inlablogo}}
+% subtitle 为双行时高度
+%		\put(width, height)
+		\put(350, 7){\pgfuseimage{RUClogo}}
+		\put(387, 6){\pgfuseimage{Infologo}}
+		\put(-25, 7){\pgfuseimage{Inlablogo}}
+	\end{picture}
+
+%	
+%    \begin{figure}[htpb]
+%        \begin{center}
+%            \includegraphics[width=\paperwidth]{pic/background_white.png}
+%        \end{center}
+%    \end{figure}
+    \titlepage
+\end{frame}
+
+\pgfdeclareimage[width=0.9\paperwidth, height=1.15\paperheight]{mybg}{asset/background.pdf}
+\setbeamertemplate{background}{
+%\includegraphics[width=12.8cm]{pic/background.pdf}
+	\begin{picture}(20, 280)(0, 0)
+		\put(45, 10){\pgfuseimage{mybg}}
+	\end{picture}
+}
+
+\begin{frame}
+    \tableofcontents[sectionstyle=show,subsectionstyle=show/shaded/hide,subsubsectionstyle=show/shaded/hide]
+\end{frame}
+
+
+\section{Introduction}
+\begin{frame}{Background}
+\begin{exampleblock}{Problem}
+	
+\end{exampleblock}
+
+\begin{exampleblock}{Motivation}
+	
+\end{exampleblock}
+\end{frame}
+
+\begin{frame}{Overview}
+\end{frame}
+
+
+\section{Related Work}
+
+
+\section{Proposed Approach}
+
+
+\section{Implementation Details And Training}
+
+
+\section{Experimental Evaluation}
+
+
+\section{Discussion And Conclusion}
+
+
+
+\begin{frame}
+    \begin{center}
+        {\Huge\calligra Thanks!}
+    \end{center}
+\end{frame}
+
+\end{document}

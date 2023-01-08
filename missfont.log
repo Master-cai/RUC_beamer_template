@@ -1,0 +1,6 @@
+mktexpk --mfmode ljfour --bdpi 600 --mag 0+360/600 --dpi 360 unihei8b
+mktexpk --mfmode ljfour --bdpi 600 --mag 0+360/600 --dpi 360 unihei8b
+mktexpk --mfmode ljfour --bdpi 600 --mag 0+360/600 --dpi 360 unihei8b
+mktexpk --mfmode ljfour --bdpi 600 --mag 0+360/600 --dpi 360 unihei8b
+mktexpk --mfmode ljfour --bdpi 600 --mag 1+57/600 --dpi 657 unikai85
+mktexpk --mfmode ljfour --bdpi 600 --mag 1+57/600 --dpi 657 unikai65
